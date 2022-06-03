@@ -1,0 +1,427 @@
+@import "./variables";
+@import "./bootstrap/bootstrap.scss";
+
+@font-face {
+    font-family: "Dubai";
+    src: url("../fonts/Dubai-Bold.ttf");
+    src: url("../fonts/Dubai-Medium.ttf");
+    src: url("../fonts/Dubai-Regular.ttf");
+    src: url("../fonts/Dubai-Light.ttf");
+}
+
+@font-face {
+    font-family: "TFArrow";
+    src: url("../fonts/TFArrow-Bold.ttf");
+}
+
+body {
+    // background-color: green;
+    font-family: Dubai;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    background-image: url("/images/Background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vmin;
+    width: 100%;
+    position: relative;
+    #overlay{
+        background-color: black;
+        height: inherit;
+        width: inherit;
+        opacity: .5;
+        position: absolute;
+    }
+   .navbar{
+       .logo{
+           height: 4.5rem;
+           width: 4.5rem;
+       }
+       .links{
+        //    background-color: red;
+           width: 40rem;
+           font-size: 24px;
+           font-weight: 500;
+           ul{
+               display: flex;
+               justify-content: space-between;
+               list-style-type: none;
+               
+            }
+       }
+       .btn{
+           height: 2.5rem;
+           width: 12.5rem;
+           margin: 5px;
+           font-size: 18px;
+           font-weight: 700;
+           border-radius: 0;
+       }
+   }
+   .covid{
+       background-color: $secondary;
+       height: 3rem;
+       width: 18.75rem;
+       font-size: 24px;
+       font-weight: 700;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 0 !important;
+       margin-top: 5rem;
+       z-index: 1;
+    }
+    .box-wrapper{
+        // background-color: red;
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        .box{
+            height: 20px;
+            width: 20px;
+            margin: 10px;
+            border-radius: 100%;
+            text-align: center;
+            
+        }
+    }
+    .text{
+        // background-color: green;
+        width: inherit;
+        color: white;
+        text-align: center;
+        z-index: 1;
+        
+        .welcome{
+            // background-color: blue;
+            width: inherit;
+            height: 5rem;
+            font-size: 48px;
+            font-weight: 400;
+            text-align: center;
+        }
+        h1{
+            // background-color: yellow;
+            height: 5.5rem;
+            width:inherit;
+            font-size: 96px;
+            font-weight: 900;
+            font-family: TFArrow;
+        }
+        hr{
+            background-color: white;
+            height: 2px;
+            width: 31rem;
+
+        }
+        .enjoy{
+            // background-color: pink;
+            height: 3.4rem;
+            width: inherit;
+            font-size: 32px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    .down-arrow{
+        // background-color: brown;
+        height: 4.5rem;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+    }
+}
+
+.container{
+    // background-color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 152px;
+    .write{
+        // background-color: green;
+        width: 30rem;
+        .room{
+        //   background-color: red;  
+          height: 3.1rem;
+          width: 25rem; 
+          font-size: 48px;
+          font-weight: 700;
+          font-style: TFArrow; 
+        }
+        .text{
+            // background-color: yellow;
+            height: 12.8rem;
+            width: 30rem;
+            font-size: 24px;
+            font-weight: 300;
+            margin-top: 1rem;
+        }
+        .button{
+            margin-top: 7rem;
+           .btn{
+                border-radius: 0;
+                font-size: 24px;
+                font-weight: 700;
+                margin-right: 3.75rem;
+            }
+        }
+    }
+    .picture{
+        // background-color: black;
+        img{
+            height: 25rem;
+            width: 30rem;
+        }
+
+    }
+}
+
+//popular offerings
+
+.contain{
+    .offering{
+        // background-color: lawngreen;
+        font-family: TFArrow-Bold ;
+        text-align: center;
+        margin-top: 9rem;
+    }
+    .container-fluid{
+        // background-color: red;
+        height: 100vmin;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+       .photo{
+        //    margin-bottom: 20rem !important;
+        // background-color: blue;
+           img{
+            width: inherit;
+            height: 20rem;
+           
+           }
+           h4{
+            font-family: TFArrow;
+            font-weight: 550;
+            font-size: 40px;
+
+           }
+           .text-contain{
+            //    background-color: green;
+                width: 20rem;
+                height: 164px;
+                text-align: left;
+                margin-right: 3px;
+                font-family: Dubai;
+                font-size: 18px;
+                font-weight: 300;
+           }
+           .price{
+               display: flex;
+           }
+       } 
+    }
+}
+
+.carousel{
+    margin-top: 150px;
+    .start{
+        text-align: center;
+        font-family: Dubai-Bold;
+        h3{
+            font-family: TFArrow;
+        }
+    }
+    .carousel-container{
+        width: 70%;
+        margin: auto;
+        border: 5px solid black;
+        overflow: hidden;
+        .carousel-slide{
+            display: flex;
+            width: 100%;
+            height: 800px;
+           
+        }
+    }
+}
+
+.facilities{
+    .subHead{
+        text-align: center;
+        margin-top: 159px;
+        margin-bottom: 0;
+        font-family: TFArrow;
+    }
+
+    .firstSet{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 98px;
+        .meetingRoom{
+            img{
+                width: 380px;
+                height: 240px;
+            }
+            h6{
+                // background-color: red;
+                font-weight: 550;
+                font-size: 25px;
+                font-family: TFArrow;
+                width: 380px;
+                margin-top: 8px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            p{
+                width: 380px;
+                height: 120px;
+                font-size: 24px;
+                font-family: Dubai;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.message{
+    h2{
+        font-family: TFArrow;
+        font-weight: 700;
+        font-size: 48px;
+        margin-top: 175px;
+        text-align: center;
+    }
+    .group{
+        display: flex;
+        justify-content: space-around;
+        
+        img{
+            margin-top: 200px;
+            width: 300px;
+            height: 300px;
+        }
+        .word{
+            p{
+                width: 700px;
+                margin-top: 116px;
+                font-size: 32px;
+                font-family: Dubai;
+            }
+            h4{
+                font-family: TFArrow;
+                font-weight: 550;
+                font-size: 30px;
+                margin-top: 31px;
+            }
+            img{
+                width: 90px;
+                height: 90px;
+                margin-top: 17px;
+            }
+        }
+    }
+}
+
+.know{
+    .background{
+        background-image: url("/images/bgiAsh.png");
+        height: 650px;
+        margin-top: 257px;
+        text-align: center;
+        h3{
+            // background-color: red;
+            height: 156px;
+            font-family: TFArrow;
+            font-weight: 700;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        p{
+            font-family: Dubai;
+            font-weight: 400;
+            font-style: 24px;
+            margin-top: 20px;
+        }
+        .firstName{
+            input{
+                background-color: #f0f0f0;
+                border: none;
+                width: 750px;
+                height: 60px;
+                text-align: center;
+            }
+        }
+        .email{
+            input{
+                background-color: #f0f0f0;
+                border: none;
+                width: 750px;
+                height: 60px;
+                margin-top: 40px;
+                text-align: center;
+            }
+        }
+        .btn{
+            margin-top: 64px;
+            border-radius: 0;
+        }
+    }
+}
+
+.hello{
+    height: 360px;
+    background-color: #F0F0F0;
+
+    .first{
+        // background-color: red;
+        font-family: TFArrow;
+        font-size: 48px;
+        font-weight: 700;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .all{
+        // background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        img{
+            height: 72px;
+            width: 72px;
+        }
+        .write{
+            width: 400px;
+            height: 78px;
+            font-family: Dubai;
+            font-size: 16px;
+        }
+        .hold{
+            display: flex;
+        }
+    }
+}

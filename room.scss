@@ -1,0 +1,268 @@
+@import "./styles/variables";
+@import "./styles/bootstrap/bootstrap.scss";
+
+@font-face {
+    font-family: "Dubai";
+    src: url("../fonts/Dubai-Bold.ttf");
+    src: url("../fonts/Dubai-Medium.ttf");
+    src: url("../fonts/Dubai-Regular.ttf");
+    src: url("../fonts/Dubai-Light.ttf");
+}
+
+@font-face {
+    font-family: "TFArrow";
+    src: url("../fonts/TFArrow-Bold.ttf");
+}
+
+body {
+    // background-color: green;
+    font-family: Dubai;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.btn{
+    height: 30px;
+    width: 150px;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0;
+
+}
+.big{
+    font-family: TFArrow;
+    font-size: 32px;
+    margin-top: 23px;
+}
+.para{
+    width: 380px;
+    height: 205px;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.navbar{
+    .logo{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    .links{
+     //    background-color: red;
+        width: 40rem;
+        font-size: 24px;
+        font-weight: 500;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            
+         }
+    }
+}
+
+.rooms{
+    .first{
+        display: flex;
+        justify-content: space-between;
+       
+        .firstImg{
+            // background-color: red;
+            background-image: url("/images/Gardenpremier.png");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            width: 380px;
+            height: 500px;
+            margin-top: 80px;
+            #overlay{
+                background-color:white;
+                width: inherit;
+                height: 60px;
+                opacity: 0.5;
+                position: absolute;
+            }
+            .inside{
+                z-index: 2;
+                display: flex;
+               margin: 7px;
+            }
+        }
+        
+       
+        
+            .secondImg{
+                // background-color: red;
+                background-image: url("/images/FamilySuite.png");
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: flex-end;
+                position: relative;
+                width: 380px;
+                height: 500px;
+                margin-top: 80px;
+                #overlay{
+                    background-color:white;
+                    width: inherit;
+                    height: 60px;
+                    opacity: 0.5;
+                    position: absolute;
+                }
+                .inside{
+                    z-index: 2;
+                    display: flex;
+                   margin: 7px;
+                }
+            }
+            
+        
+        
+            .thirdImg{
+                // background-color: red;
+                background-image: url("/images/premierSuite.png");
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: flex-end;
+                position: relative;
+                width: 380px;
+                height: 500px;
+                margin-top: 80px;
+                #overlay{
+                    background-color:white;
+                    width: inherit;
+                    height: 60px;
+                    opacity: 0.5;
+                    position: absolute;
+                }
+                .inside{
+                    z-index: 2;
+                    display: flex;
+                   margin: 7px;
+                }
+            }
+            
+        
+    }
+
+    .second{
+        display: flex;
+        justify-content: space-between;
+        .imgOne{
+            // background-color: red;
+            background-image: url("/images/luxurySuite.png");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            width: 380px;
+            height: 500px;
+            margin-top: 80px;
+            #overlay{
+                background-color:white;
+                width: inherit;
+                height: 60px;
+                opacity: 0.5;
+                position: absolute;
+            }
+            .inside{
+                z-index: 2;
+                display: flex;
+               margin: 7px;
+            }
+        }
+        .imgTwo{
+            // background-color: red;
+            background-image: url("/images/Image.png");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            width: 380px;
+            height: 500px;
+            margin-top: 80px;
+            #overlay{
+                background-color:white;
+                width: inherit;
+                height: 60px;
+                opacity: 0.5;
+                position: absolute;
+            }
+            .inside{
+                z-index: 2;
+                display: flex;
+               margin: 7px;
+            }
+        }
+        .imgThree{
+            // background-color: red;
+            background-image: url("/images/Governor\'sSuite.png");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            width: 380px;
+            height: 500px;
+            margin-top: 80px;
+            #overlay{
+                background-color:white;
+                width: inherit;
+                height: 60px;
+                opacity: 0.5;
+                position: absolute;
+            }
+            .inside{
+                z-index: 2;
+                display: flex;
+               margin: 7px;
+            }
+        }
+    }
+    
+}
+
+.hello{
+    height: 360px;
+    background-color: #F0F0F0;
+    margin-top: 582px;
+
+    .first{
+        // background-color: red;
+        font-family: TFArrow;
+        font-size: 48px;
+        font-weight: 700;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .all{
+        // background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        img{
+            height: 72px;
+            width: 72px;
+        }
+        .write{
+            width: 400px;
+            height: 78px;
+            font-family: Dubai;
+            font-size: 16px;
+        }
+        .hold{
+            display: flex;
+        } 
+    }
+}
